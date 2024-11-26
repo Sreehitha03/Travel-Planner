@@ -34,4 +34,3 @@ A simple and interactive web application designed to assist users in planning th
 - **CSS**: Styling and layout for a visually appealing interface.  
 - **JavaScript**: Adding interactivity (e.g., popups, form handling).  
 
----
