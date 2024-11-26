@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link href="travel.jpg" rel="icon">
+    <title>Login</title>
+</head>
+<body>
+    <div class="wrapper"> 
+      <div class="form-box" id="form-box">
+        <div class="login-container" id="login">
+          <div class="top">
+            <header>Login</header>
+          </div>
+          <form class="input-box" id="login-form">
+            <input type="text" id="email-login" class="input-field" name="email" placeholder="Username or Email">
+            <i class="bx bx-user"></i>
+            <input type="password" id="password-login" class="input-field" name="password" placeholder="Password">
+            <i class="bx bx-lock-alt"></i>
+            <a href="..main/index.html"></a>
+            <input type="submit" class="submit" name="signin" value="Sign In">
+            </a>
+          </form>
+          <div class="two-col">
+            <div class="one">
+              <input type="checkbox" id="login-check">
+              <label for="login-check"> Remember Me</label>
+            </div>
+            <div class="two">
+              <label><a href="#">Forgot password?</a></label>
+            </div>
+          </div>
+          <div class="top">
+            <span>Don't have an account? <a href="#" onclick="switchForm('register')">Sign Up</a></span>
+          </div>
+        </div>
+  
+        <div class="register-container" id="register" style="display: none;">
+          <div class="top">
+            <header>Sign Up</header>
+          </div>
+          <form class="input-box" id="register-form">
+            <div class="two-forms">
+              <div class="input-box">
+                <input type="text" id="fname" class="input-field" name="firstname" placeholder="Firstname">
+                <i class="bx bx-user"></i>
+              </div>
+              <div class="input-box">
+                <input type="text" id="lname" class="input-field"  name="lastname" placeholder="Lastname">
+                <i class="bx bx-user"></i>
+              </div>
+            </div>
+            <input type="text" id="email-register" class="input-field" name="Email" placeholder="Email">
+            <i class="bx bx-envelope"></i>
+            <input type="password" id="password-register" class="input-field" name="password" placeholder="Password">
+            <i class="bx bx-lock-alt"></i>
+            <input type="submit" class="submit" name="register" value="Register">
+          </form>
+          <div class="two-col">
+            <div class="one">
+              <input type="checkbox" id="register-check">
+              <label for="register-check"> Remember Me</label>
+            </div>
+            <div class="two">
+              <label><a href="#">Terms & conditions</a></label>
+            </div>
+          </div>
+          <div class="top">
+            <span>Have an account? <a href="#" onclick="switchForm('login')">Login</a></span>
+          </div>
+        </div>
+      </div>
+      <div id="error"></div>
+    </div>
+  
+    <script src="script.js"></script>
+  </body>
+</html>
